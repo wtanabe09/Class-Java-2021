@@ -1,0 +1,139 @@
+
+バブル
+・昇順降順で時間変わらない
+・データ数が少なければ比べる回数が少ない
+
+セレクション
+・昇順降順で時間変わらない
+・データ数が少なければ比べる回数が少ない
+
+インサーション
+・降順のデータだと遅い。昇順に近かったら早い。
+・昇順に近いデータで使うべき
+
+シェル
+・降順のデータだと遅い。昇順に近かったら早い
+・昇順に近いデータで使うべき
+
+クイック
+・早い
+・データサイズが大きかったときがよい
+・データサイズが小さいと不向き
+
+インサーションクイック
+・一番はやい
+
+
+100 10
+=== ascending  =============================
+- BubbleSort -
+	assignCount:   0
+	compareCount:  4950
+	average time:  0.26009750000000004[ms]
+- SelectionSort -
+	assignCount:   297
+	compareCount:  4950
+	average time:  0.29867160000000004[ms]
+- InsertionSortX -
+	assignCount:   198
+	compareCount:  99
+	average time:  0.0764907[ms]
+- ShellSort -
+	assignCount:   684
+	compareCount:  342
+	average time:  0.040155300000000005[ms]
+- QuickSort -
+	assignCount:   201
+	compareCount:  622
+	average time:  0.0890599[ms]
+- InsertionQuickSort -
+	assignCount:   186
+	compareCount:  524
+	average time:  0.0383789[ms]
+=== descending =============================
+- BubbleSort -
+	assignCount:   14820
+	compareCount:  4950
+	average time:  0.2969206999999999[ms]
+- SelectionSort -
+	assignCount:   297
+	compareCount:  4950
+	average time:  0.21481019999999998[ms]
+- InsertionSortX -
+	assignCount:   5138
+	compareCount:  4948
+	average time:  0.3393932[ms]
+- ShellSort -
+	assignCount:   910
+	compareCount:  496
+	average time:  0.0885099[ms]
+- QuickSort -
+	assignCount:   342
+	compareCount:  615
+	average time:  0.0927309[ms]
+- InsertionQuickSort -
+	assignCount:   336
+	compareCount:  519
+	average time:  0.012789400000000001[ms]
+
+
+
+1000 10
+=== random     =============================
+- BubbleSort -
+	assignCount:   773106
+	compareCount:  499500
+	average time:  1.390077[ms]
+- SelectionSort -
+	assignCount:   2997
+	compareCount:  499500
+	average time:  1.8817903[ms]
+- InsertionSortX -
+	assignCount:   259700
+	compareCount:  258696
+	average time:  0.7166194000000001[ms]
+- ShellSort -
+	assignCount:   20405
+	compareCount:  14507
+	average time:  0.18365170000000003[ms]
+- QuickSort -
+	assignCount:   7899
+	compareCount:  13186
+	average time:  0.26008859999999995[ms]
+- InsertionQuickSort -
+	assignCount:   7767
+	compareCount:  12206
+	average time:  0.8504011[ms]
+
+
+100000 10
+=== random     =============================
+- BubbleSort -
+	assignCount:   74960871
+	compareCount:  49995000
+	average time:  135.16530949999998[ms]
+- SelectionSort -
+	assignCount:   29997
+	compareCount:  49995000
+	average time:  57.6287793[ms]
+- InsertionSortX -
+	assignCount:   25006955
+	compareCount:  24996950
+	average time:  35.4062988[ms]
+- ShellSort -
+	assignCount:   317921
+	compareCount:  238341
+	average time:  1.8193305[ms]
+- QuickSort -
+	assignCount:   101940
+	compareCount:  178493
+	average time:  3.0877019[ms]
+- InsertionQuickSort -
+	assignCount:   100941
+	compareCount:  168702
+	average time:  15.565524299999998[ms]
+
+
+
+要素数を多くしたら多くしたら閾値も大きくしたほうが良い
+要素数を小さくしたら閾値も小さくしたほうが良い
